@@ -54,9 +54,6 @@ A URL to a hub with working Canvas authentication enabled, that anyone with acce
 #### Estimates
 
 ```{estimate-table}
-1. -  Task
-   -  Lower Bound
-   -  Upper Bound
 1. -  Provision OAuth2 credentials from University IT
    -  2h
    -  4h
@@ -69,9 +66,6 @@ A URL to a hub with working Canvas authentication enabled, that anyone with acce
 1. -  Migrate all the staging hubs (3 total) & verify they work
    -  3h
    -  4h
-1. -  Total
-   -  12h
-   -  20h
 ```
 
 (2025-10-28: Totals were updated by @colliand following a request from Harneer Batra.)
@@ -278,9 +272,6 @@ Same as Deliverable 3 but for all production hubs.
 #### Estimates
 
 ```{estimate-table}
-1. -  Task
-   -  Lower Bound
-   -  Upper Bound
 1. -  Migrate `highmem` hub, potentially restrict it to specific sets of users
    -  4h
    -  6h
@@ -293,9 +284,6 @@ Same as Deliverable 3 but for all production hubs.
 1. -  Watch for and address any support issues for a week
    -  4h
    -  4h
-1. -  Total
-   -  12h
-   -  18h
 ```
 
 #### Who works on this?
