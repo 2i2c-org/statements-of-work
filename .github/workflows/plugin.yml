@@ -26,5 +26,4 @@ jobs:
         with:
           tag: ${{ github.ref }}
           files: |
-            dist/plugin.mjs
-        working-directory: plugin
+            plugin/dist/plugin.mjs
