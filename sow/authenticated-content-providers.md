@@ -127,15 +127,26 @@ Initial development for `nbgitpuller` can start with manually generating a Canva
 5. Write tests to validate expected behaviour
 6. Upstream features to `repoproviders`
 
-| Task                                                                     | Lower Estimate | Upper Estimate |
-| ------------------------------------------------------------------------ | -------------- | -------------- |
-| 1. Pass Canvas API user access token to JupyterHub                       | 1h             | 2h             |
-| 2. Authenticate with access token using `repoproviders`                  | 8h             | 16h            |
-| 3. Create a new `CanvasResolver` class for `repoproviders/src/resolvers` | 12h            | 20h            |
-| 4. Create a new `CanvasFetcher` class for `repoproviders/src/fetchers`   | 12h            | 20h            |
-| 5. Write tests to validate expected behaviour                            | 12h            | 16h            |
-| 6. Upstream features to `repoproviders`                                  | 4h             | 8h             |
-| **Total**                                                                | **49h**        | **82h**        |
+```{estimate-table}
+1. - Pass Canvas API user access token to JupyterHub
+   -  1h
+   -  2h
+1. - Authenticate with access token using `repoproviders`
+   -  8h
+   -  16h
+1. - Create a new `CanvasResolver` class for `repoproviders/src/resolvers`
+   -  12h
+   -  20h
+1. - Create a new `CanvasFetcher` class for `repoproviders/src/fetchers`
+   -  12h
+   -  20h
+1. - Write tests to validate expected behaviour
+   -  12h
+   -  16h
+1. - Upstream features to `repoproviders`
+   -  4h
+   -  8h
+```
 
 ## Out of Scope
 
@@ -160,11 +171,14 @@ This project would require capacity from:
 
 ## Timeline
 
-| Deliverable                                                                              | Lower Estimate | Upper Estimate |
-| ---------------------------------------------------------------------------------------- | -------------- | -------------- |
-| 1. Pull Google Drive content with a Google Service Account Service Token from JupyterHub | 76h            | 116h           |
-| 2. Pull Canvas content with a User Token from JupyterHub                                 | 49h            | 82h            |
-| **Total**                                                                                | **125h**       | **198h**       |
+```{estimate-table}
+1. - Pull Google Drive content with a Google Service Account Service Token from JupyterHub
+   -  76h
+   -  116h
+1. - Pull Canvas content with a User Token from JupyterHub
+   -  49h
+   -  82h
+```
 
 ## References
 
