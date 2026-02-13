@@ -8,12 +8,17 @@ project:
   # authors: []
   github: https://github.com/2i2c-org/statements-of-work
   toc:
-    - file: content/main.md
-    - pattern: content/sow/*.md
-      
+    - file: main.md
+    - pattern: sow/*.md
+
   # To autogenerate a Table of Contents, run "myst init --write-toc"
 site:
   template: book-theme
   # options:
   #   favicon: favicon.ico
   #   logo: site_logo.png
+  options:
+    folders: true
+    logo: images/logo.webp
+    logo_dark: images/logo-dark.webp
+    logo_text: Statements of Work
