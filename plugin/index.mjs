@@ -8,11 +8,11 @@ const estimateTableDirective = {
 
   options: {
     ...listTableDirective.options,
-    ...commonDirectiveOptions("estiamte-table"),
+    ...commonDirectiveOptions("estimate-table"),
   },
-  run(data) {
+  run(data, vfile) {
     // Find the table node
-    const [containerNode] = listTableDirective.run(data);
+    const [containerNode] = listTableDirective.run(data, vfile);
     const tableNode = select("table", containerNode);
 
     // Consider non-header rows
@@ -32,10 +32,10 @@ const estimateTableDirective = {
     let minHours = 0;
     let maxHours = 0;
     contributingRows.forEach((row) => {
-      const rawMinText = select("tableCell:nth-child(2) > text", row);
+      const rawMinText = select("tableCell:nth-child(2) text", row);
       const [rawMin, minText] = rawMinText.value.match(/^(\d+)h$/);
 
-      const rawMaxText = select("tableCell:nth-child(3) > text", row);
+      const rawMaxText = select("tableCell:nth-child(3) text", row);
       const [rawMax, maxText] = rawMaxText.value.match(/^(\d+)h$/);
 
       minHours += Number.parseInt(minText);
@@ -51,8 +51,13 @@ const estimateTableDirective = {
           header: true,
           children: [
             {
-              type: "text",
-              value: "Task",
+              type: "paragraph",
+              children: [
+                {
+                  type: "text",
+                  value: "Task",
+                },
+              ],
             },
           ],
         },
@@ -61,8 +66,13 @@ const estimateTableDirective = {
           header: true,
           children: [
             {
-              type: "text",
-              value: "Lower Estimate",
+              type: "paragraph",
+              children: [
+                {
+                  type: "text",
+                  value: "Lower Estimate",
+                },
+              ],
             },
           ],
         },
@@ -71,8 +81,13 @@ const estimateTableDirective = {
           header: true,
           children: [
             {
-              type: "text",
-              value: "Upper Estimate",
+              type: "paragraph",
+              children: [
+                {
+                  type: "text",
+                  value: "Upper Estimate",
+                },
+              ],
             },
           ],
         },
@@ -85,11 +100,16 @@ const estimateTableDirective = {
           type: "tableCell",
           children: [
             {
-              type: "strong",
+              type: "paragraph",
               children: [
                 {
-                  type: "text",
-                  value: "Total",
+                  type: "strong",
+                  children: [
+                    {
+                      type: "text",
+                      value: "Total",
+                    },
+                  ],
                 },
               ],
             },
@@ -99,11 +119,16 @@ const estimateTableDirective = {
           type: "tableCell",
           children: [
             {
-              type: "strong",
+              type: "paragraph",
               children: [
                 {
-                  type: "text",
-                  value: `${minHours}h`,
+                  type: "strong",
+                  children: [
+                    {
+                      type: "text",
+                      value: `${minHours}h`,
+                    },
+                  ],
                 },
               ],
             },
@@ -113,11 +138,16 @@ const estimateTableDirective = {
           type: "tableCell",
           children: [
             {
-              type: "strong",
+              type: "paragraph",
               children: [
                 {
-                  type: "text",
-                  value: `${maxHours}h`,
+                  type: "strong",
+                  children: [
+                    {
+                      type: "text",
+                      value: `${maxHours}h`,
+                    },
+                  ],
                 },
               ],
             },
