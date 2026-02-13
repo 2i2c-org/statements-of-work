@@ -1,0 +1,14 @@
+{
+  "name": "plugin",
+  "version": "1.0.0",
+  "devDependencies": {
+    "esbuild": "0.25.4"
+  },
+  "scripts": {
+    "build": "esbuild index.mjs --bundle --outfile=dist/plugin.mjs --platform=node --format=esm"
+  },
+  "dependencies": {
+    "myst-directives": "^1.5.8",
+    "unist-util-select": "^4.0.3"
+  }
+}
