@@ -88,7 +88,6 @@ Initial development for `nbgitpuller` can start with manually generating a Canva
 7. Upstream features to `repoproviders`
 
 ```{estimate-table}
-
 1. - Create a Google Service Account with the appropriate permissions
    - 4h
    - 4h
