@@ -87,16 +87,30 @@ Initial development for `nbgitpuller` can start with manually generating a Canva
 6. Write tests to validate expected behaviour
 7. Upstream features to `repoproviders`
 
-| Task                                                                                   | Lower Estimate | Upper Estimate |
-| -------------------------------------------------------------------------------------- | -------------- | -------------- |
-| 1. Create a Google Service Account with the appropriate permissions                    | 4h             | 4h             |
-| 2. Provision the access tokens from JupyterHub                                         | 4h             | 8h             |
-| 3. Extend `repoproviders` to authenticate against access tokens provided by JupyterHub | 12h            | 20h            |
-| 4. Create a `GoogleDriveResolver` class for `repoproviders/src/resolvers`              | 20h            | 28h            |
-| 5. Create a `GoogleDriveFetcher` class for `repoproviders/src/fetchers`                | 20h            | 28h            |
-| 6. Write tests to validate expected behaviour                                          | 12h            | 16h            |
-| 7. Upstream features to `repoproviders`                                                | 4h             | 8h             |
-| **Total**                                                                              | **76h**        | **116h**       |
+```{estimate-table}
+
+1. - Create a Google Service Account with the appropriate permissions
+   - 4h
+   - 4h
+1. - Provision the access tokens from JupyterHub
+   - 4h
+   - 8h
+1. - Extend `repoproviders` to authenticate against access tokens provided by JupyterHub
+   - 12h
+   - 20h
+1. - Create a `GoogleDriveResolver` class for `repoproviders/src/resolvers`
+   - 20h
+   - 28h
+1. - Create a `GoogleDriveFetcher` class for `repoproviders/src/fetchers`
+   - 20h
+   - 28h
+1. - Write tests to validate expected behaviour
+   - 12h
+   - 16h
+1. - Upstream features to `repoproviders`
+   - 4h
+   - 8h
+```
 
 ### 2. Pull Canvas content with a User Token from JupyterHub
 

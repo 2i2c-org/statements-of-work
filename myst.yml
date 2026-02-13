@@ -7,6 +7,8 @@ project:
   # keywords: []
   # authors: []
   github: https://github.com/2i2c-org/statements-of-work
+  plugins:
+    - https://github.com/2i2c-org/statements-of-work/releases/download/table-plugin-1.0.1/plugin.mjs
   toc:
     - file: main.md
     - pattern: sow/*.md
