@@ -60,16 +60,16 @@ We will extend the existing error response of the `nbgitpuller` web UI to provid
 #### Estimates
 
 ```{estimate-table}
-1. -  Build routine to identify "preferred" UI application
+-  -  Build routine to identify "preferred" UI application
    -  2h
    -  3h
-1. -  Design and implement UI
+-  -  Design and implement UI
    -  1h
    -  3h
-1. -  Open pull-request and shepherd through to merge
+-  -  Open pull-request and shepherd through to merge
    -  2h
    -  4h
-1. -  Additional learning and refinement
+-  -  Additional learning and refinement
    -  1h
    -  3h
 ```
@@ -90,13 +90,13 @@ Fundamental changes to the technology stack, such as introducing a new UI framew
 #### Estimates
 
 ```{estimate-table}
-1. -  Design and implement UI
+-  -  Design and implement UI
    -  5h
    -  8h
-1. -  Open pull-request and shepherd through to merge
+-  -  Open pull-request and shepherd through to merge
    -  2h
    -  4h
-1. -  Additional learning and refinement
+-  -  Additional learning and refinement
    -  1h
    -  3h
 ```
@@ -115,19 +115,19 @@ Within the space of possible errors that can occur during typical usage of `nbgi
 #### Estimates
 
 ```{estimate-table}
-1. -  Liaise with appropriate personas associated with existing JupyterHub deployments
+-  -  Liaise with appropriate personas associated with existing JupyterHub deployments
    -  4h
    -  11h
-1. -  Generate structured events from raw logs
+-  -  Generate structured events from raw logs
    -  3h
    -  7h
-1. -  Analyse nbgitpuller events to identify common error types
+-  -  Analyse nbgitpuller events to identify common error types
    -  2h
    -  4h
-1. -  Open pull-request and shepherd through to merge
+-  -  Open pull-request and shepherd through to merge
    -  2h
    -  4h
-1. -  Additional learning and refinement
+-  -  Additional learning and refinement
    -  1h
    -  3h
 ```
@@ -152,19 +152,19 @@ Once each error class has a dedicated response, `nbgitpuller` will be extended t
 #### Estimates
 
 ```{estimate-table}
-1. -  Build error-handling routines to process and identify common failure modes
+-  -  Build error-handling routines to process and identify common failure modes
    -  3h
    -  7h
-1. -  Design and implement UI
+-  -  Design and implement UI
    -  7h
    -  12h
-1. -  Update nbgitpuller documentation
+-  -  Update nbgitpuller documentation
    -  1h
    -  2h
-1. -  Open pull-request and shepherd through to merge
+-  -  Open pull-request and shepherd through to merge
    -  2h
    -  4h
-1. -  Additional learning and refinement
+-  -  Additional learning and refinement
    -  1h
    -  3h
 ```
@@ -174,10 +174,10 @@ Once each error class has a dedicated response, `nbgitpuller` will be extended t
 In addition to per-deliverable work, there is up-front work that may be paid by each developer:
 
 ```{estimate-table}
-1. -  Become familiar with nbgitpuller architecture
+-  -  Become familiar with nbgitpuller architecture
    -  2h
    -  4h
-1. -  Set up development environment
+-  -  Set up development environment
    -  1h
    -  2h
 ```

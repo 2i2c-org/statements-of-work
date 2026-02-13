@@ -67,16 +67,16 @@ Under the hood, Binderbot handles a number of distinct responsibilities:
 #### Estimates
 
 ```{estimate-table}
-1. - Familiarise oneself with MyST execution and Binderbot v1
+-  - Familiarise oneself with MyST execution and Binderbot v1
    - 1h
    - 3h
-1. - Build Node.js script to launch and stop BinderHub sessions
+-  - Build Node.js script to launch and stop BinderHub sessions
    - 1h
    - 3h
-1. - Publish script as package on GitHub and npm with CI releases
+-  - Publish script as package on GitHub and npm with CI releases
    - 2h
    - 4h
-1. - Code review
+-  - Code review
    - 1h
    - 1h
 ```
@@ -96,16 +96,16 @@ The Project Pythia project is most likely to consume the new `clinder` tool insi
 #### Estimates
 
 ```{estimate-table}
-1. - Create GitHub action that outputs BinderHub information as variables
+-  - Create GitHub action that outputs BinderHub information as variables
    - 1h
    - 3h
-1. - Publish GitHub action to GitHub Actions Marketplace
+-  - Publish GitHub action to GitHub Actions Marketplace
    - 1h
    - 2h
-1. - Create demonstration resource that uses this action
+-  - Create demonstration resource that uses this action
    - 1h
    - 2h
-1. - Code review
+-  - Code review
    - 1h
    - 1h
 ```
@@ -124,19 +124,19 @@ The Project Pythia project has a [cookbook template] and a number of cookbook re
 #### Estimates
 
 ```{estimate-table}
-1. - Become familiar with the Project Pythia cookbook actions
+-  - Become familiar with the Project Pythia cookbook actions
    - 1h
    - 1h
-1. - Update the cookbook actions to use the new `clinder` tool & deploy to a test branch
-   - 1h
-   - 2h
-1. - Fork an existing cookbook and test it against the forked actions
+-  - Update the cookbook actions to use the new `clinder` tool & deploy to a test branch
    - 1h
    - 2h
-1. - Identify and fix outstanding bugs
+-  - Fork an existing cookbook and test it against the forked actions
+   - 1h
+   - 2h
+-  - Identify and fix outstanding bugs
    - 1h
    - 3h
-1. - Review and deploy new version of actions to `main` branch
+-  - Review and deploy new version of actions to `main` branch
    - 1h
    - 2h
 ```

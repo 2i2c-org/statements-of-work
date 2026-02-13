@@ -54,16 +54,16 @@ A URL to a hub with working Canvas authentication enabled, that anyone with acce
 #### Estimates
 
 ```{estimate-table}
-1. -  Provision OAuth2 credentials from University IT
+-  -  Provision OAuth2 credentials from University IT
    -  2h
    -  4h
-1. -  Setup one staging hub with these credentials & document it
+-  -  Setup one staging hub with these credentials & document it
    -  3h
    -  6h
-1. -  Investigate user identifiers & write a migration plan for home directories
+-  -  Investigate user identifiers & write a migration plan for home directories
    -  4h
    -  6h
-1. -  Migrate all the staging hubs (3 total) & verify they work
+-  -  Migrate all the staging hubs (3 total) & verify they work
    -  3h
    -  4h
 ```
@@ -98,25 +98,25 @@ All production hubs have users logging in via Canvas
 #### Estimates
 
 ```{estimate-table}
-1. -  Verify & document how resetting hub session cookie affects running users
+-  -  Verify & document how resetting hub session cookie affects running users
    -  1h
    -  2h
-1. -  Make a migration plan with timelines agreed upon by 2i2c & the University
+-  -  Make a migration plan with timelines agreed upon by 2i2c & the University
    -  2h
    -  3h
-1. -  Migrate `highmem` hub
+-  -  Migrate `highmem` hub
    -  4h
    -  8h
-1. -  Migrate `r` hub
+-  -  Migrate `r` hub
    -  4h
    -  8h
-1. -  Migrate main hub
+-  -  Migrate main hub
    -  4h
    -  8h
-1. -  Map exiting home directories names to new names (if user identifiers are different, as determined in migration plan in Deliverable 1)*
+-  -  Map exiting home directories names to new names (if user identifiers are different, as determined in migration plan in Deliverable 1)*
    -  6h
    -  8h
-1. -  Watch for and address any support issues for a week
+-  -  Watch for and address any support issues for a week
    -  4h
    -  4h
 ```
@@ -172,40 +172,40 @@ There's [prior art](https://github.com/berkeley-dsep-infra/canvasoauthenticator)
 #### Estimates
 
 ```{estimate-table}
-1. -  Setup the python project
+-  -  Setup the python project
    -  1h
    -  2h
-1. -  Set up local Canvas environment for testing
+-  -  Set up local Canvas environment for testing
    -  4h
    -  8h
-1. -  Build helper function for fetching Canvas course enrollments into `auth_state`
+-  -  Build helper function for fetching Canvas course enrollments into `auth_state`
    -  4h
    -  10h
-1. -  Build helper function for fetching Canvas group membership into `auth_state`
+-  -  Build helper function for fetching Canvas group membership into `auth_state`
    -  4h
    -  10h
-1. -  Implement an additional, non Canvas `auth_state` helper to ensure the design is not tied to Canvas
+-  -  Implement an additional, non Canvas `auth_state` helper to ensure the design is not tied to Canvas
    -  6h
    -  8h
-1. -  Build scaffolding so admins can compose various helper functions to pick up authorization info into `auth_state`
+-  -  Build scaffolding so admins can compose various helper functions to pick up authorization info into `auth_state`
    -  8h
    -  16h
-1. -  Add package to the hub image, and test on a staging hub
+-  -  Add package to the hub image, and test on a staging hub
    -  8h
    -  16h
-1. -  Configure staging hub to make enrollments into jupyterhub groups
+-  -  Configure staging hub to make enrollments into jupyterhub groups
    -  4h
    -  6h
-1. -  Test restricting users based on courses they are in works (and fix bugs if it isn't)
+-  -  Test restricting users based on courses they are in works (and fix bugs if it isn't)
    -  4h
    -  8h
-1. -  Test that `jupyterhub-groups-exporter` picks these up, so grafana reporting shows groups
+-  -  Test that `jupyterhub-groups-exporter` picks these up, so grafana reporting shows groups
    -  4h
    -  6h
-1. -  Test that we can show different profile options to users based on group membership
+-  -  Test that we can show different profile options to users based on group membership
    -  2h
    -  4h
-1. -  Write a blog post announcing this work (and credit everyone)
+-  -  Write a blog post announcing this work (and credit everyone)
    -  2h
    -  4h
 ```
@@ -272,16 +272,16 @@ Same as Deliverable 3 but for all production hubs.
 #### Estimates
 
 ```{estimate-table}
-1. -  Migrate `highmem` hub, potentially restrict it to specific sets of users
+-  -  Migrate `highmem` hub, potentially restrict it to specific sets of users
    -  4h
    -  6h
-1. -  Migrate `r` hub
+-  -  Migrate `r` hub
    -  2h
    -  4h
-1. -  Migrate main hub
+-  -  Migrate main hub
    -  2h
    -  4h
-1. -  Watch for and address any support issues for a week
+-  -  Watch for and address any support issues for a week
    -  4h
    -  4h
 ```

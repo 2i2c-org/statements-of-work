@@ -60,16 +60,16 @@ The nature of these kinds of failures means that they're often content-dependent
 #### Estimates
 
 ```{estimate-table}
-1. -  Generate structured events from raw logs
+-  -  Generate structured events from raw logs
    -  6h
    -  10h
-1. -  Analyse nbgitpuller events to identify common error types
+-  -  Analyse nbgitpuller events to identify common error types
    -  4h
    -  8h
-1. -  Open pull-request and shepherd through to merge
+-  -  Open pull-request and shepherd through to merge
    -  4h
    -  8h
-1. -  Additional learning and refinement
+-  -  Additional learning and refinement
    -  2h
    -  6h
 ```
@@ -90,16 +90,16 @@ Alongside implementing fixes for these newly identified merge-failure scenarios,
 #### Estimates
 
 ```{estimate-table}
-1. -  Create reproducible tests for existing merge-failures
+-  -  Create reproducible tests for existing merge-failures
    -  8h
    -  12h
-1. -  Implement fixes for these test failures
+-  -  Implement fixes for these test failures
    -  12h
    -  20h
-1. -  Open pull-request and shepherd through to merge
+-  -  Open pull-request and shepherd through to merge
    -  4h
    -  8h
-1. -  Additional learning and refinement
+-  -  Additional learning and refinement
    -  2h
    -  6h
 ```
@@ -109,10 +109,10 @@ Alongside implementing fixes for these newly identified merge-failure scenarios,
 In addition to per-deliverable work, there is up-front work that may be paid by each developer:
 
 ```{estimate-table}
-1. -  Become familiar with nbgitpuller architecture
+-  -  Become familiar with nbgitpuller architecture
    -  4h
    -  8h
-1. -  Set up development environment
+-  -  Set up development environment
    -  2h
    -  3h
 ```

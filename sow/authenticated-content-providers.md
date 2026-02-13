@@ -88,25 +88,25 @@ Initial development for `nbgitpuller` can start with manually generating a Canva
 7. Upstream features to `repoproviders`
 
 ```{estimate-table}
-1. - Create a Google Service Account with the appropriate permissions
+-  - Create a Google Service Account with the appropriate permissions
    - 4h
    - 4h
-1. - Provision the access tokens from JupyterHub
+-  - Provision the access tokens from JupyterHub
    - 4h
    - 8h
-1. - Extend `repoproviders` to authenticate against access tokens provided by JupyterHub
+-  - Extend `repoproviders` to authenticate against access tokens provided by JupyterHub
    - 12h
    - 20h
-1. - Create a `GoogleDriveResolver` class for `repoproviders/src/resolvers`
+-  - Create a `GoogleDriveResolver` class for `repoproviders/src/resolvers`
    - 20h
    - 28h
-1. - Create a `GoogleDriveFetcher` class for `repoproviders/src/fetchers`
+-  - Create a `GoogleDriveFetcher` class for `repoproviders/src/fetchers`
    - 20h
    - 28h
-1. - Write tests to validate expected behaviour
+-  - Write tests to validate expected behaviour
    - 12h
    - 16h
-1. - Upstream features to `repoproviders`
+-  - Upstream features to `repoproviders`
    - 4h
    - 8h
 ```
@@ -127,22 +127,22 @@ Initial development for `nbgitpuller` can start with manually generating a Canva
 6. Upstream features to `repoproviders`
 
 ```{estimate-table}
-1. - Pass Canvas API user access token to JupyterHub
+-  - Pass Canvas API user access token to JupyterHub
    -  1h
    -  2h
-1. - Authenticate with access token using `repoproviders`
+-  - Authenticate with access token using `repoproviders`
    -  8h
    -  16h
-1. - Create a new `CanvasResolver` class for `repoproviders/src/resolvers`
+-  - Create a new `CanvasResolver` class for `repoproviders/src/resolvers`
    -  12h
    -  20h
-1. - Create a new `CanvasFetcher` class for `repoproviders/src/fetchers`
+-  - Create a new `CanvasFetcher` class for `repoproviders/src/fetchers`
    -  12h
    -  20h
-1. - Write tests to validate expected behaviour
+-  - Write tests to validate expected behaviour
    -  12h
    -  16h
-1. - Upstream features to `repoproviders`
+-  - Upstream features to `repoproviders`
    -  4h
    -  8h
 ```
@@ -171,10 +171,10 @@ This project would require capacity from:
 ## Timeline
 
 ```{estimate-table}
-1. - Pull Google Drive content with a Google Service Account Service Token from JupyterHub
+-  - Pull Google Drive content with a Google Service Account Service Token from JupyterHub
    -  76h
    -  116h
-1. - Pull Canvas content with a User Token from JupyterHub
+-  - Pull Canvas content with a User Token from JupyterHub
    -  49h
    -  82h
 ```

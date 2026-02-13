@@ -77,16 +77,16 @@ GET /pull?url=https%3A%2F%2Fgithub.com%2Fdata-8%2Fmaterials-sp25&on-success=lab%
 #### Estimates
 
 ```{estimate-table}
-1. -  Build `/pull` endpoint
+-  -  Build `/pull` endpoint
    -  9h
    -  15h
-1. -  Write tests for repoprovider endpoint
+-  -  Write tests for repoprovider endpoint
    -  1h
    -  5h
-1. -  Open pull-request and shepherd through to merge
+-  -  Open pull-request and shepherd through to merge
    -  2h
    -  4h
-1. -  Additional learning and refinement
+-  -  Additional learning and refinement
    -  1h
    -  3h
 ```
@@ -107,22 +107,22 @@ The most direct solution to this problem is to establish sufficient state for th
 #### Estimates
 
 ```{estimate-table}
-1. -  Perform spike into using repoprovider metadata to record ancestor tracking
+-  -  Perform spike into using repoprovider metadata to record ancestor tracking
    -  4h
    -  8h
-1. -  Perform spike into three-way merging of non-Git sources
+-  -  Perform spike into three-way merging of non-Git sources
    -  7h
    -  11h
-1. -  Implement support for three-way merging using Git as a merge tool
+-  -  Implement support for three-way merging using Git as a merge tool
    -  12h
    -  20h
-1. -  Write tests for merging logic
+-  -  Write tests for merging logic
    -  8h
    -  14h
-1. -  Open pull-request and shepherd through to merge
+-  -  Open pull-request and shepherd through to merge
    -  4h
    -  8h
-1. -  Additional learning and refinement
+-  -  Additional learning and refinement
    -  2h
    -  6h
 ```
@@ -143,28 +143,28 @@ To support ZIP files, we could switch on the `.zip` URL path suffix. Another app
 #### Estimates
 
 ```{estimate-table}
-1. -  Identify suitable approach for declaring ZIP URLs
+-  -  Identify suitable approach for declaring ZIP URLs
    -  4h
    -  8h
-1. -  Add support for resolving and fetching ZIP URLs
+-  -  Add support for resolving and fetching ZIP URLs
    -  4h
    -  8h
-1. -  Add tests to cover fetching new ZIP URLs
+-  -  Add tests to cover fetching new ZIP URLs
    -  5h
    -  9h
-1. -  Add support for fetching Zenodo dataset URLs
+-  -  Add support for fetching Zenodo dataset URLs
    -  6h
    -  11h
-1. -  Add tests to cover fetching Zenodo dataset URLs
+-  -  Add tests to cover fetching Zenodo dataset URLs
    -  5h
    -  9h
-1. -  Add tests to nbgitpuller for ZIP and Zenodo URLs
+-  -  Add tests to nbgitpuller for ZIP and Zenodo URLs
    -  3h
    -  6h
-1. -  Open pull-request and shepherd through to merge
+-  -  Open pull-request and shepherd through to merge
    -  4h
    -  8h
-1. -  Additional learning and refinement
+-  -  Additional learning and refinement
    -  2h
    -  6h
 ```
@@ -197,13 +197,13 @@ An important feature of the link-generator user interface is the ability to shar
 #### Estimates
 
 ```{estimate-table}
-1. -  Rewrite link-generator UI to generate git-pull links
+-  -  Rewrite link-generator UI to generate git-pull links
    -  15h
    -  30h
-1. -  Open pull-request and shepherd through to merge
+-  -  Open pull-request and shepherd through to merge
    -  4h
    -  8h
-1. -  Additional learning and refinement
+-  -  Additional learning and refinement
    -  2h
    -  6h
 ```
@@ -222,16 +222,16 @@ After building support for `repoproviders`, we will have a larger maintenance bu
 #### Estimates
 
 ```{estimate-table}
-1. -  Replace GitPuller machinery with existing repoprovider implementation
+-  -  Replace GitPuller machinery with existing repoprovider implementation
    -  7h
    -  11h
-1. -  Ensure that existing git-pull test suite continues to pass
+-  -  Ensure that existing git-pull test suite continues to pass
    -  4h
    -  7h
-1. -  Open pull-request and shepherd through to merge
+-  -  Open pull-request and shepherd through to merge
    -  4h
    -  8h
-1. -  Additional learning and refinement
+-  -  Additional learning and refinement
    -  2h
    -  6h
 ```
@@ -241,10 +241,10 @@ After building support for `repoproviders`, we will have a larger maintenance bu
 In addition to per-deliverable work, there is up-front work that may be paid by each developer:
 
 ```{estimate-table}
-1. -  Become familiar with nbgitpuller architecture
+-  -  Become familiar with nbgitpuller architecture
    -  4h
    -  8h
-1. -  Set up development environment
+-  -  Set up development environment
    -  2h
    -  3h
 ```
