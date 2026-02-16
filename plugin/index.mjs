@@ -32,11 +32,18 @@ const estimateTableDirective = {
     let minHours = 0;
     let maxHours = 0;
     contributingRows.forEach((row) => {
+      let match;
+      let minText = "0";
       const rawMinText = select("tableCell:nth-child(2) text", row);
-      const [rawMin, minText] = rawMinText.value.match(/^(\d+)h$/);
-
+      if ((match = rawMinText.value.match(/^(\d+)h$/))) {
+        minText = match[1];
+      }
+      // Default to min = max
+      let maxText = minText;
       const rawMaxText = select("tableCell:nth-child(3) text", row);
-      const [rawMax, maxText] = rawMaxText.value.match(/^(\d+)h$/);
+      if ((match = rawMaxText.value.match(/^(\d+)h$/))) {
+        maxText = match[1];
+      }
 
       minHours += Number.parseInt(minText);
       maxHours += Number.parseInt(maxText);
