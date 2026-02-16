@@ -404,6 +404,7 @@ This isn't a complete overhaul of the page - only an incremental improvement + s
 ```{estimate-table}
 - - UX mockup
   - 8h
+  - 8h
 - - Human readable progress messages
   - 24h
   - 32h
