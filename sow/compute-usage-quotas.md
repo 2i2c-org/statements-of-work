@@ -178,9 +178,9 @@ This should be made available as a JupyterHub service providing a web page that 
 
 #### Estimates (56-68h)
 
-App Eng: 12-24h
-Infra Eng: ~32h
-Co-ordination overhead: ~12h
+- App Eng: 12-24h
+- Infra Eng: ~32h
+- Co-ordination overhead: ~12h
 
 #### Risk factors
 
