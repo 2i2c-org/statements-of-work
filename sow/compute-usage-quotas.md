@@ -207,9 +207,9 @@ This prometheus server is now on the critical path to server startup, unlike the
 The core of the quotaing system consists of:
 
 1. A way to declaritively specify _quotas_, consisting of:
-   a. A _resource_ (lime RAM or CPU)
-   b. A _rolling time duration_ (last 30 days)
-   c. A _limit_ expressed in terms of a _Resource \* Time_ (GiBHours or CPUHours)
+   - A _resource_ (lime RAM or CPU)
+   - A _rolling time duration_ (last 30 days)
+   - A _limit_ expressed in terms of a _Resource \* Time_ (GiBHours or CPUHours)
 2. Based on this configuration, a way to ask 'this user wants to use X units of resource Y. Are they allowed to do it?'
 
 We will implement a _async friendly python library_ that can answer this question. It'll take the following inputs:
@@ -241,15 +241,31 @@ To do this, it would need to:
   - [ ] Contributor documentation, including local setup of Prometheus & exporters
 - [ ] Library is published to PyPI
 
-#### Estimates (82-114h)
+#### Estimates
 
-- PromQL exploration (~4h)
-- Quota schema definition (~10h)
-- JupyterHub API integration (~4h)
-- Core quota logic (~24-32h)
-- Integration testing infrastructure + setup (~24-32h)
-- Documentation (~12-24h)
-- Package publishing (~4h)
+```{estimate-table}
+- - PromQL exploration
+  - 4h
+  - 4h
+- - Quota schema definition
+  - 10h
+  - 10h
+- - JupyterHub API integration
+  - 4h
+  - 4h
+- - Core quota logic
+  - 24h
+  - 32h
+- - Integration testing infrastructure + setup
+  - 24h
+  - 32h
+- - Documentation
+  - 12h
+  - 24h
+- - Package publishing
+  - 4h
+  - 4h
+```
 
 #### Notes
 
@@ -272,7 +288,7 @@ This library provides critical functionality to enable usage quotas. If this pie
 
 #### Demo Reel
 
-1. Commandline example showing wether a user's quota request for a particular size server would be allowed or not (GIF?)
+1. Commandline example showing whether a user's quota request for a particular size server would be allowed or not (GIF?)
 
 ### Deliverable 3: JupyterHub service for users to check their own quota
 
@@ -283,7 +299,7 @@ End users need a way to:
 1. Know what quota limitations they are subject to
 2. How much of their quota they have used so far
 
-We will build a web application that is a [jupyterhub service](https://jupyterhub.readthedocs.io/en/latest/reference/services.html) for users to check this for themselves.
+We will build a web application that is a [JupyterHub service](https://jupyterhub.readthedocs.io/en/latest/reference/services.html) for users to check this for themselves.
 
 ##### Intentionally out of Scope
 
@@ -303,15 +319,31 @@ All these are possible features to be added in future phases, so our design need
 - [ ] Contributor documentation on how to contribute to this service, including local set up.
 - [ ] The service is packaged as a python package and published to PyPi.
 
-#### Estimates (96-108h)
+#### Estimates
 
-- Setting up the base JupyterHub service with auth (12hr)
-- Setting up the base frontend with dependencies & packaging (12hr)
-- Design and mockup of UI (10hr)
-- Build backend application (24-32h)
-- Build frontend application (24-32h)
-- Documentation (8hr)
-- Package publishing (4hr)
+```{estimate-table}
+- - Setting up the base JupyterHub service with auth
+  - 12h
+  - 12h
+- - Setting up the base frontend with dependencies & packaging
+  - 12h
+  - 12h
+- - Design and mockup of UI
+  - 10h
+  - 10h
+- - Build backend application
+  - 24h
+  - 32h
+- - Build frontend application
+  - 24h
+  - 32h
+- - Documentation
+  - 8h
+  - 8h
+- - Package publishing
+  - 4h
+  - 4h
+```
 
 #### People needed
 
@@ -367,13 +399,24 @@ This isn't a complete overhaul of the page - only an incremental improvement + s
   - Mitigation: We can roll this out in a temporary fork while we wait for upstream to go through, so we don't have to block other deliverables
   - Mitigation: I (Yuvi) have reached out to other upstream maintainers to do a quick check on if this is acceptable and desired.
 
-#### Estimates (104-158h)
+#### Estimates
 
-- UX mockup (~8h)
-- Human readable progress messages (~24-32h)
-- Allowing hooks to inject progress messages (~24-32h)
-- Allowing some progress messages to terminate spawn (~24-32h)
-- Upstream co-ordination overhead (~24-32h)
+```{estimate-table}
+- - UX mockup
+  - 8h
+- - Human readable progress messages
+  - 24h
+  - 32h
+- - Allowing hooks to inject progress messages
+  - 24h
+  - 32h
+- - Allowing some progress messages to terminate spawn
+  - 24h
+  - 32h
+- - Upstream co-ordination overhead
+  - 24h
+  - 32h
+```
 
 #### People needed
 
@@ -409,10 +452,16 @@ If it should be **denied**:
 - [ ] If any changes to JupyterHub itself are required to provide this functionality, those are contributed upstream and merged.
 - [ ] This is deployed on the _earthscope staging hub_
 
-#### Estimates (~32-40h)
+#### Estimates
 
-- Integration work (~24-32h)
-- Documentation (~8h)
+```{estimate-table}
+- - Integration work
+  - 24h
+  - 32h
+- - Documentation
+  - 8h
+  - 8h
+```
 
 #### People needed
 
@@ -437,10 +486,16 @@ So far, we would have deployed to staging clusters and tested. We will need to
 - [ ] Agree to a timeline for expediated support and monitoring around the roll-out period
 - [ ] Roll this out to the production earthscope hub.
 
-#### Estimates (~16-48h)
+#### Estimates
 
-- Coordination with Earthscope (8hrs)
-- Support and monitoring (8-40hr)
+```{estimate-table}
+- - Coordination with Earthscope
+  - 8h
+  - 8h
+- - Support and monitoring
+  - 8h
+  - 40h
+```
 
 #### Risk factors
 
