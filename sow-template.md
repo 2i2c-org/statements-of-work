@@ -24,20 +24,13 @@ exports:
 
 #### Estimates
 
-:::{list-table}
-:class: estimates
-:header-rows: 1
-
-- - Task
-  - Upper Estimate
-  - Lower Estimate
+:::{estimate-table}
 - - Item 1
   - 1h
   - 2h
 - - Item 2
   - 3h
   - 6h
-
 :::
 
 ## Intentionally out of scope
